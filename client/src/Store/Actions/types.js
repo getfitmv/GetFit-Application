@@ -1,0 +1,29 @@
+export const LOGIN_USER = "login_user";
+export const REGISTER_USER = "register_user";
+export const AUTH_USER = "auth_user";
+export const LOGOUT_USER = "logout_user";
+
+export const GET_PRODUCTS_BY_SELL = "get_products_by_sell";
+export const GET_PRODUCTS_BY_ARRIVAL = "get_products_by_arrival";
+export const GET_CATGS = "get_catgs";
+export const ADD_CATG = "add_catg";
+export const GET_GENDS = "get_gends";
+export const ADD_GEND = "add_gend";
+export const CLEAR_CATG = "clear_catg";
+export const CLEAR_GEND = "clear_gend";
+export const GET_TRAINERS_PRODUCTS = "get_trainers_products";
+export const ADD_PRODUCT = "add_product";
+export const CLEAR_PRODUCT = "clear_product";
+export const GET_PRODUCT_DETAIL = "get_product_detail";
+export const CLEAR_PRODUCT_DETAIL = "clear_product_detail";
+export const GET_PRODUCT_ID = "get_product_id";
+export const CLEAR_PRODUCT_ID = "clear_product_id";
+export const ADD_TO_CART = "add_to_cart";
+export const GET_CARD_ITEM = "get_card_item";
+export const RM_CART_ITEM = "rm_cart_item";
+export const ON_SUCCESS_PURCHASE = "on_success_purchase";
+export const UPDATE_PROFILE = "update_profile";
+export const CLEAR_UPDATE_FEILDS = "clear_update_feilds";
+
+export const GET_SITE_INFO = "get_site_info";
+export const MODIFY_SITE_INFO = "modify_site_info";
