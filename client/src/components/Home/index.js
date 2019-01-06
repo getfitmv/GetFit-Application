@@ -17,11 +17,8 @@ class Home extends Component {
     return (
       <div>
         <HomeSlider />
-        <CardLine
-          list={this.props.products.bySell}
-          title="Best Selling guitars"
-        />
-        <CardLine list={this.props.products.byArraival} title="New arrivals" />
+        <CardLine list={this.props.products.bySell} title="Best Selling" />
+        <CardLine list={this.props.products.byArraival} title="New Packages" />
       </div>
     );
   }
