@@ -6,19 +6,19 @@ const HomeSlider = props => {
   const slides = [
     {
       img: "/images/Slide-1.jpg",
-      lineOne: "Fender",
-      lineTwo: "Custom shop",
+      lineOne: "Get Fit",
+      lineTwo: "your online trainer",
       linkTitle: "Shop now"
     },
     {
       img: "/images/Slide-2.jpg",
-      lineOne: "B-Stock",
-      lineTwo: "Awesome discounts"
+      lineOne: "Get Fit",
+      lineTwo: "your goals will be achived"
     },
     {
       img: "/images/Slide-3.jpg",
-      lineOne: "B-Stock",
-      lineTwo: "Awesome discounts"
+      lineOne: "Get Fit",
+      lineTwo: "no obe is better than us"
     }
   ];
 
