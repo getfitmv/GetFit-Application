@@ -33,7 +33,7 @@ const sendEmail = (to, name, token, template, actionData = null) => {
     service: "Gmail",
     auth: {
       user: "getfitmv@gmail.com",
-      pass: "P@$$010Mohd"
+      pass: process.env.PASS_MAIL
     }
   });
 
