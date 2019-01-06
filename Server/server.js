@@ -15,7 +15,7 @@ const { sendEmail } = require("./mailComp/mail/index");
 require("dotenv").config();
 
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.DATABASE);
+mongoose.connect(process.env.MONGODB_URI);
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -45,6 +45,8 @@ const { Payment } = require("./models/payment");
 const { auth } = require("./middleware/auth");
 
 const { admin } = require("./middleware/admin");
+
+app.use(express.static("client/build"));
 
 //===============================
 //            USERS
@@ -498,8 +500,7 @@ app.post("/api/users/successBuy", auth, (req, res) => {
   );
 });
 
-
-app.delete
+app.delete;
 /**
 |--------------------------------------------------
 |           EMAIL             
@@ -530,6 +531,17 @@ app.delete
 //   }
 //   smtpTransport.close();
 // });
+
+//=============================
+//          Default
+//=============================
+
+if (process.env.NODE_ENV === "production") {
+  const path = require("path");
+  app.get("/*", (req, res) => {
+    res.sendfile(path.resolve(__dirname, "../client", "build", "index.html"));
+  });
+}
 
 //===============================
 //        SERVER CONFIG
